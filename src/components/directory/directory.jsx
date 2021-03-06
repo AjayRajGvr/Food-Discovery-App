@@ -1,6 +1,6 @@
 import React from 'react';
 //import MenuItem from '../menu-item/menuitem'; 
-import './directory.styles.css'; 
+import './directory.styles.scss'; 
 import kochiImage from '../../assets/kochi.jpg'; 
 import bangaloreImage from '../../assets/bangalore.jpg';
 import hyderabadImage from '../../assets/hyderabad.jpg';
@@ -11,22 +11,22 @@ const Directory = () => (
 <div classname='row' >
     <div className='column'>
    <div className='card'>
-       <img src={kochiImage} alt='kochi' style={{width:'100%' }} />
+       <img src={kochiImage} alt='kochi' style={{width:'100%', height:'100%' }} />
       
-       <Link to='/kochi' >
+       <Link to='/kochi' className='link' >
            <div className='container'>
-           <h4><b>view restraunts in Kochi</b></h4>
+           <h3><b>View Restaurants in Kochi</b></h3>
            </div>   
        </Link>
        </div>
        </div>
        <div className='column'>
    <div className='card'>
-       <img src={bangaloreImage} alt='bangalore' style={{width:'100%'}} />
+       <img src={bangaloreImage} alt='bangalore' style={{width:'100%',height:'100%'}} />
       
-       <Link to='/bangalore' >
+       <Link to='/bangalore' className='link' >
            <div className='container'>
-           <h4><b>view restraunts in Bangalore</b></h4>
+           <h3><b>View Restaurants in Bangalore</b></h3>
            </div>   
        </Link>
        </div>
@@ -35,9 +35,9 @@ const Directory = () => (
    <div className='card'>
        <img src={hyderabadImage} alt='kochi' style={{width:'100%'}} />
       
-       <Link to='/hyderabad' >
+       <Link to='/hyderabad' className='link' >
            <div className='container'>
-           <h4><b>view restraunts in hyderabad</b></h4>
+           <h3><b>View Restaurants in hyderabad</b></h3>
            </div>   
        </Link>
        </div>

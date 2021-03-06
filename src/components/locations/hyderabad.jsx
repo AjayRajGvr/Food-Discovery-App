@@ -3,7 +3,7 @@ import DisplayLocation from './displaylocation';
 
 const Hyderabad = () => (
     <div>
-         <h3>Best restraunts in Hyderabad</h3>
+         <h2>Best Restaurants in Hyderabad</h2>
          <DisplayLocation locationName='hyderabad'/>
     </div>
 )
